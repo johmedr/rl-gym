@@ -188,7 +188,8 @@ class A3CAgent:
 if __name__=="__main__":
 	sess = tf.Session()
 	K.set_session(sess)
-	env = gym.make("Pendulum-v0")
+	# env = gym.make("Pendulum-v0")
+	env = gym.make('Assault-v0')
 	actor_critic = A3CAgent(env, sess, None)
 	
 	num_trials = 10000
